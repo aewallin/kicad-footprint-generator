@@ -47,3 +47,57 @@ SO-4_4.4x3.9mm_P2.54mm:
   pitch: 2.54
   num_pins_x: 0
   num_pins_y: 2
+
+Texas_PowerPAD_SO-20-1EP_7.52x12.83mm_P1.27mm:
+  size_source: 'http://www.ti.com/lit/ds/symlink/opa569.pdf'
+  #custom_name_format: Texas_PowerPAD_SO-{pincount:d}-1EP_{size_x:.2g}x{size_y:.2g}mm_P{pitch:.2g}mm
+  body_size_x:
+    minimum: 7.45
+    maximum: 7.59
+  body_size_y:
+    minimum: 12.7
+    maximum: 12.95
+  overall_size_x:
+    minimum: 10.16
+    maximum: 10.65
+  lead_width:
+    minimum: 0.35
+    maximum: 0.51
+  lead_len:
+    minimum: 1.35
+    maximum: 1.53
+  pitch: 1.27
+  num_pins_x: 0
+  num_pins_y: 10
+
+  # http://www.ti.com/lit/an/slma004b/slma004b.pdf
+  EP_size_x:
+    nominal: 6.045 # 0.238"
+    tolerance: 0
+  EP_mask_x: 2.159
+  EP_size_y:
+    nominal: 12.09 # 0.476"
+    tolerance: 0
+  EP_mask_y: 3.048
+  
+  
+  thermal_vias:
+    count: [3, 5]
+    # x-pitch 0.026" = 0.66 mm
+    # y-pitch 0.039"/2 = 0.495 mm
+    drill: 0.33 # 0.013"
+    min_annular_ring: 0.08 # (0.495 spacing - 0.33 drill)/2 =  0.08 mm max ring
+    paste_via_clearance: 0.1
+    EP_paste_coverage: 0.75
+    grid: [0.66, 0.495]
+    paste_avoid_via: False
+    EP_num_paste_pads: [2, 2]
+
+  # optional additional thermal vias
+  # does footprint-generator support this?
+  #thermal_vias:
+    #count: [3, 2]
+    #drill: 0.635 # 0.025"
+    #grid: [2.54, 10.16] 
+    #EP_num_paste_pads: [2, 2]
+  
