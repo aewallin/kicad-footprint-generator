@@ -62,7 +62,8 @@ Texas_PowerPAD_SO-20-1EP_7.52x12.83mm_P1.27mm:
     minimum: 10.16
     maximum: 10.65
   overall_height:
-    maximum: 2.65
+    nominal: 2.65
+    tolerance: 0
   lead_width:
     minimum: 0.35
     maximum: 0.51
@@ -75,10 +76,16 @@ Texas_PowerPAD_SO-20-1EP_7.52x12.83mm_P1.27mm:
 
   # http://www.ti.com/lit/an/slma004b/slma004b.pdf
   EP_size_x:
+    minimum: 2.72
+    maximum: 3.81
+  EP_size_x_overwrite:
     nominal: 6.045 # 0.238"
     tolerance: 0
   EP_mask_x: 2.159
   EP_size_y:
+    minumum: 3.49
+    maximum: 4.32
+  EP_size_y_overwrite:
     nominal: 12.09 # 0.476"
     tolerance: 0
   EP_mask_y: 3.048
