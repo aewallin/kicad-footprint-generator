@@ -50,6 +50,7 @@ SO-4_4.4x3.9mm_P2.54mm:
 
 Texas_PowerPAD_SO-20-1EP_7.52x12.83mm_P1.27mm:
   size_source: 'http://www.ti.com/lit/ds/symlink/opa569.pdf'
+  size_source: 'http://www.ti.com/lit/an/slma004b/slma004b.pdf'
   #custom_name_format: Texas_PowerPAD_SO-{pincount:d}-1EP_{size_x:.2g}x{size_y:.2g}mm_P{pitch:.2g}mm
   body_size_x:
     minimum: 7.45
