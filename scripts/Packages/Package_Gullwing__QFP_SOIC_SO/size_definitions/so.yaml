@@ -61,6 +61,8 @@ Texas_PowerPAD_SO-20-1EP_7.52x12.83mm_P1.27mm:
   overall_size_x:
     minimum: 10.16
     maximum: 10.65
+  overall_height:
+    maximum: 2.65
   lead_width:
     minimum: 0.35
     maximum: 0.51
