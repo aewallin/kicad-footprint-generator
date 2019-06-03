@@ -79,12 +79,12 @@ Texas_PowerPAD_SO-20-1EP_7.52x12.83mm_P1.27mm:
     minimum: 2.72
     maximum: 3.81
   EP_size_x_overwrite: 6.045 # 0.238"
-  EP_mask_x: 2.159 # 0.085"
+  EP_mask_x: 3.81
   EP_size_y:
     minimum: 3.49
     maximum: 4.32
   EP_size_y_overwrite: 12.09 # 0.476"
-  EP_mask_y: 3.048 # 0.120"
+  EP_mask_y: 4.32
   
   thermal_vias:
     count: [3, 5]
