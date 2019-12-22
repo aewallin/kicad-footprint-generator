@@ -73,21 +73,23 @@ Texas_PowerPAD_SO-20-1EP_7.52x12.83mm_P1.27mm:
   num_pins_x: 0
   num_pins_y: 10
 
-  # EP_size from opa569 datasheet
+  # EP_size from OPA569 datasheet
   # _overwrite from PowerPad app note slma004b.pdf
+  # mask size from OPA569 datasheet Figure 16: 3.56 mm x 4.47 mm
+  # Thermal vias from OPA569 datasheet Figure 16: 3x8=24pcs 13mil
   EP_size_x:
     minimum: 2.72
     maximum: 3.81
   EP_size_x_overwrite: 6.045 # 0.238"
-  EP_mask_x: 3.81
+  EP_mask_x: 3.56
   EP_size_y:
     minimum: 3.49
     maximum: 4.32
   EP_size_y_overwrite: 12.09 # 0.476"
-  EP_mask_y: 4.32
+  EP_mask_y: 4.47
   
   thermal_vias:
-    count: [3, 5]
+    count: [3, 8]
     # x-pitch 0.026" = 0.66 mm
     # y-pitch 0.039"/2 = 0.495 mm
     drill: 0.33 # 0.013"
@@ -96,13 +98,4 @@ Texas_PowerPAD_SO-20-1EP_7.52x12.83mm_P1.27mm:
     EP_paste_coverage: 0.75
     grid: [0.66, 0.495]
     paste_avoid_via: False
-    EP_num_paste_pads: [2, 2]
-
-  # optional additional thermal vias
-  # does footprint-generator support this?
-  #thermal_vias:
-    #count: [3, 2]
-    #drill: 0.635 # 0.025"
-    #grid: [2.54, 10.16] 
-    #EP_num_paste_pads: [2, 2]
-  
+    EP_num_paste_pads: [2, 2]  
